@@ -1,1 +1,1 @@
-# Blinking_Leds_STM32
+# simple_blink_try_2
