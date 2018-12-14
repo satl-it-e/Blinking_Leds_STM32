@@ -40,7 +40,7 @@
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
-extern HCD_HandleTypeDef hhcd_USB_OTG_FS;
+extern TIM_HandleTypeDef htim4;
 
 /******************************************************************************/
 /*            Cortex-M4 Processor Interruption and Exception Handlers         */ 
@@ -207,17 +207,17 @@ void EXTI0_IRQHandler(void)
 }
 
 /**
-* @brief This function handles USB On The Go FS global interrupt.
+* @brief This function handles TIM4 global interrupt.
 */
-void OTG_FS_IRQHandler(void)
+void TIM4_IRQHandler(void)
 {
-  /* USER CODE BEGIN OTG_FS_IRQn 0 */
+  /* USER CODE BEGIN TIM4_IRQn 0 */
 
-  /* USER CODE END OTG_FS_IRQn 0 */
-  HAL_HCD_IRQHandler(&hhcd_USB_OTG_FS);
-  /* USER CODE BEGIN OTG_FS_IRQn 1 */
+  /* USER CODE END TIM4_IRQn 0 */
+  HAL_TIM_IRQHandler(&htim4);
+  /* USER CODE BEGIN TIM4_IRQn 1 */
 
-  /* USER CODE END OTG_FS_IRQn 1 */
+  /* USER CODE END TIM4_IRQn 1 */
 }
 
 /* USER CODE BEGIN 1 */
